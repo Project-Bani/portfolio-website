@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 48px;
+}
+
+/* NAVBAR STYLE */
+nav {
+    padding: 1rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-style: solid;
+    border-width: 0px 0px 5px 0px;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+.navbar-logo {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.navbar-link {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-link a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 200ms ease-in-out;
+}
+
+.navbar-link a:hover {
+    color: #16423C;
+}
+/* END OF NAVBAR STYLE */
+
+
+/* HOME SECTION */
+.hero-container {
+    padding: 4rem 8rem;
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+}
+
+.right-hero {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.right-hero img {
+    height: auto;
+    width: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 48px;
+    border: solid;
+    border-width: 3px;
+    box-shadow: 3px 5px;
+    object-fit: cover;
+}
+
+.left-hero {
+    width: 60%;
+}
+
+.left-hero p {
+    line-height: 1.5;
+}
+
+.left-hero h1 {
+    font-size: 80px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 12px 28px;
+    margin-top: 32px;
+    background: #0A6847;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: solid black;
+    border-width: 2px;
+    box-shadow: 3px 3px black;
+    transition: ease-in-out 300ms;
+}
+
+.hero-button:hover {
+    background: #16423C;
+}
+/* END OF HOME SECTION */
+
+
+/* Portofolio section */
+.portofolio-container {
+    padding: 4rem 8rem;
+}
+
+.portofolio-content-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 3rem;
+    margin-top: 48px;
+}
+
+.portofolio-content {
+    border: solid;
+    border-width: 3px;
+    box-shadow: 6px 6px
+}
+
+.content-header {
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    border: solid;
+    border-width: 0 0 3px 0;
+}
+
+.circle-container {
+    width: 10%;
+}
+
+.text-header-container {
+    width: 90%;
+}
+
+.text-header-container p {
+    text-align: center;
+}
+
+.portofolio-image {
+    height: 200px;
+    border: solid;
+    border-width: 0 0 3px 0;
+}
+
+.portofolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portofolio-desc {
+    padding: 1.5rem 2.5rem;
+}
+
+.portofolio-desc h1 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.portofolio-desc ul {
+    display: flex;
+    gap: 0.5rem;
+    margin: 16px 0 16px 0;
+}
+
+.portofolio-desc li {
+    list-style-type: none;
+    padding: 8px 16px;
+    border: solid;
+    border-width: 2px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.portofolio-desc p {
+    line-height: 1.5;
+}
+
+.portofolio-desc a {
+    margin-top: 18px;
+    display: inline-block;
+    padding: 12px 32px;
+    border: solid;
+    border-width: 2px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 3px 3px;
+    transition: ease-in-out 300ms;
+}
+
+.portofolio-desc a:hover {
+    box-shadow: 0 0;
+}
+/* end of portofolio section */
+
+
+/* skill & education section */
+.skilledu-main-container {
+    padding: 4rem 8rem;
+}
+
+.skilledu-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4rem;
+    margin-top: 32px;
+}
+
+.education-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.education-content h1 {
+    font-size: 24px;
+}
+
+.education-content h3 {
+    font-size: 18px;
+}
+
+.education-content p {
+    font-size: 16px;
+    margin-top: 16px;
+    font-weight: 500;
+}
+/* end of skill & education section */
